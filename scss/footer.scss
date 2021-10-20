@@ -1,0 +1,43 @@
+.footer {
+  background-color: $bluegrey200;
+  margin-top: 40px;
+  padding: 35px;
+  font-size: $p-smartphone;
+
+  &_navbar {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  &_logo {
+    width: 25px;
+    height: 25px;
+    margin: 0 20px 0 20px;
+  }
+
+  &_copyright {
+    text-align: center;
+    color: $purple800;
+  }
+
+  &_navLink {
+    text-decoration: none;
+    color: $purple600;
+    padding: 0 20px 0 20px;
+  }
+
+  .AirV {
+    text-decoration: none;
+    color: $purple600;
+  }
+
+  &_group {
+    @media screen and (min-width: 700px) { 
+      display: flex;
+      justify-content: space-between;
+    }
+  } 
+}

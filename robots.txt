@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /favicon/
+Disallow: /images/
+Disallow: /package-lock.json/
+Disallow: /package.json/
+Disallow: /README.md/
+

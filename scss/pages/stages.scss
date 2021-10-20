@@ -1,0 +1,254 @@
+/* Descriptif et condition */
+.stage {
+  &_title {
+    padding-bottom: 25px;
+  }
+
+  &_img1 ,&_img2 {
+    padding: 0 15px 25px 15px; 
+  }
+
+  &_descriptive-text1 ,&_descriptive-text2 ,&_descriptive-text3 {
+    font-size: $p-smartphone;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  &_background1 {
+    background-color: $bluegrey100;
+    padding-bottom: 20px;
+    
+  }
+
+  &_title3 {
+    padding-top: 30px;
+  }
+
+  @media screen and (min-width: 530px) {
+    &_img {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    &_title {
+      font-size: $h-tablet;
+      font-style: italic;
+      padding-top: 20px;
+    }
+
+    &_descriptive-text1 ,&_descriptive-text2 ,&_descriptive-text3 {
+      padding-left: 80px;
+      padding-right: 80px;
+      line-height: 23px;
+    }
+
+    &_img {
+      padding-bottom: 30px;
+    }
+
+    &_background2 {
+      background-color: $bluegrey100;
+      padding-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &_text {
+      font-size: $p-desktop;
+      line-height: 30px;
+    }
+    &_background2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 150px 380px;
+      grid-template-areas: 
+      ". title"
+      "img text";
+    }
+
+    &_title {
+      grid-area: title;
+      font-size: $h-desktop;
+      padding: 0;
+    }
+
+    &_grid1 {
+      grid-area: img;
+    }
+
+    &_descriptive-text1 {
+      grid-area: text;
+    }
+
+    &_description {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 150px 380px;
+      grid-template-areas: 
+      "title-2 ."
+      "text-2 img-2";
+      margin-top: 150px;
+    }
+
+    &_title3 {
+      grid-area: title-2;
+    }
+
+    &_descriptive-text2, &_descriptive-text3 {
+      grid-area: text-2;
+    }
+    
+    &_descriptive-text3 {
+      padding-top: 200px;
+    }
+
+    &_grid2 {
+      grid-area: img-2;
+    }
+  }
+}
+
+/*Stages*/
+.style {
+  &_title {
+    text-decoration: underline;
+  }
+
+  &_descriptionText ,&_priceText {
+    font-size: $p-smartphone;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  &_img1 ,&_img2 ,&_img3 {
+    padding: 0 20px 50px 20px;
+  }
+
+  &_price {
+    padding-left: 15px;
+    font-size: $h-smartphone;
+  }
+
+  @media screen and (min-width: 538px) {
+    &_img1 ,&_img2 ,&_img3 {
+      display: flex;
+      justify-content: center;  
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+   .style {
+
+    &_title {
+      font-size: $h-tablet;
+      font-style: italic;
+    }
+
+    &_descriptionText {
+      line-height: 23px;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    &_img2-3 {
+      display: flex;
+      justify-content: space-evenly
+    }
+   }
+}
+
+@media screen and (min-width: 1200px) {
+  .style {
+    
+    &_title {
+      font-size: $h-desktop;
+    }
+
+    &_descriptionText {
+      font-size: $p-desktop;
+      line-height: 30px;
+      padding: 75px 200px 50px 200px;
+    }
+
+    &_img2-3 {
+      padding-top: 100px;
+    }
+  }
+}
+
+
+/* Tarif */
+.price {
+  background-color: $bluegrey100;
+  padding-bottom: 50px;
+  
+  &_title {
+    font-size: $h-smartphone;
+    padding: 20px 0 10px 35px;
+    text-decoration: underline;
+  }
+
+  &_text {
+    font-size: $p-smartphone;
+    padding: 0 20px 20px 20px;
+    text-align: justify;
+  }
+
+  &_button {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 700px) {
+    &_title {
+      font-size: $h-tablet;
+      padding-bottom: 20px;
+    }
+
+    &_text {
+      padding: 0 30px 35px 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 300px;
+    grid-template-areas: 
+    "Price ."
+    "Text Button";
+    padding-bottom: 30px;
+    margin: 100px 80px;
+
+    &_title {
+      grid-area: Price;
+      font-size: $h-desktop;
+      padding-left: 45%;
+      font-style: italic;
+      padding-top: 40px;
+    }
+
+    &_text {
+      grid-area: Text;
+      font-size: $p-desktop;
+      padding-top: 40px;
+      text-align: center;
+    }
+
+    &_button {
+      grid-area: Button;
+      padding-top: 80px;
+    }
+  }
+}
+
+
+
+
+
+

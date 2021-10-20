@@ -1,0 +1,37 @@
+{
+  "name": "evalution_1",
+  "version": "1.0.0",
+  "description": "First assessment on HTML, CSS, Bootstrap and Git.",
+  "main": "index.js",
+  "dependencies": {
+    "cssnano": "^5.0.6",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1"
+  },
+  "scripts": {
+    "watch": "node-sass scss/main.scss css/style.css --watch",
+    "prod": "node-sass scss/main.scss css/style.css && postcss css/style.css --use cssnano -o css/style.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herveNkb/evaluation_1.git"
+  },
+  "author": "AirV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herveNkb/evaluation_1/issues"
+  },
+  "homepage": "https://github.com/herveNkb/evaluation_1#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "css-aspect-ratio": "^1.0.5",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.25.1"
+  }
+}

@@ -1,0 +1,41 @@
+nav {
+  background-color: $bluegrey200;
+  box-shadow: 0px 4px 5px -5px rgba(74,73,73,0.75);
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+}  
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.navbar-brand:hover {
+  font-size: 2.1rem;
+  transition: 200ms;
+  letter-spacing: 1px;
+  color: $purple800;
+}
+
+.nav-link {
+  color: $purple800;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  font-size: 1.3rem;
+  transition: 200ms;
+  color: $purple800;
+}
+
+
+/* Breadcrumb Bootstrap */
+.breadcrumb a {  
+  color: $purple800;
+}
+
+.breadcrumb a:hover {
+  letter-spacing: 0.7px;
+  color: $purple800;
+}
